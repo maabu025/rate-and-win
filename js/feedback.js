@@ -1,38 +1,25 @@
-const reviewsEndpoint = 'http://localhost:3000/reviews';
+document.getElementById("feedbackForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData.entries());
 
-function renderReviews(data){
-  const container = $('#reviews').empty();
-  data.forEach(r => {
-    const stars = '★'.repeat(r.rating) + '☆'.repeat(5-r.rating);
-    const card = $(`
-      <div class="review-card d-flex align-items-center">
-        <img src="${r.userAvatar}" alt="${r.userName}">
-        <div class="ml-3">
-          <h5>${r.userName} <small class="text-muted">${r.timeAgo}</small></h5>
-          <p><strong>${r.restaurantName}</strong> <span class="stars">${stars}</span></p>
-          <p>${r.comment}</p>
-        </div>
-      </div>`);
-    container.append(card);
-  });
-}
+  try {
+    const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-function loadReviews(){
-  $.ajax({
-    url: reviewsEndpoint,
-    method: 'GET',
-    success: renderReviews,
-    error: () => alert('Unable to load reviews.')
-  });
-}
-
-$('#search').on('input', function(){
-  const q = this.value.toLowerCase();
-  $.ajax({
-    url: `${reviewsEndpoint}?restaurantName_like=${q}`,
-    method: 'GET',
-    success: renderReviews
-  });
+    if (response.ok) {
+      alert("Feedback submitted successfully!");
+      window.location.href = "feedback-confirmation.html";
+    } else {
+      alert("Something went wrong.");
+    }
+  } catch (error) {
+    console.error(error);
+    alert("Network error.");
+  }
 });
-
-$(document).ready(loadReviews);

@@ -1,0 +1,38 @@
+body {
+  font-family: $font-family-base;
+  font-size: $body-size;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.btn-orange {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  @include transition();
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+.alert-success {
+  background-color: $accent-color;
+  color: white;
+}
+
+.alert-error {
+  background-color: $error-color;
+  color: white;
+}
+
+.alert-info {
+  background-color: $info-color;
+  color: white;
+}
