@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rate & Win - Submit Feedback</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Rate & Win</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="restaurants.html">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="rewards.html">Rewards</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="text-center p-4 bg-warning text-dark">
+    <h2>Submit Your Feedback</h2>
+    <p>Rate your dining experience and earn points!</p>
+  </header>
+
+  <!-- Feedback Form -->
+  <main class="container my-5">
+    <form id="feedback-form" class="shadow p-4 bg-white rounded">
+      <div class="mb-3">
+        <label for="restaurant" class="form-label">Restaurant</label>
+        <select id="restaurant" class="form-select" required>
+          <option selected disabled value="">Choose...</option>
+          <option value="golden_grill">Golden Grill</option>
+          <option value="urban_taste">Urban Taste</option>
+          <option value="mamas_kitchen">Mama's Kitchen</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="rating" class="form-label">Rating</label>
+        <select id="rating" class="form-select" required>
+          <option selected disabled value="">Rate out of 5</option>
+          <option value="1">1 - Poor</option>
+          <option value="2">2 - Fair</option>
+          <option value="3">3 - Good</option>
+          <option value="4">4 - Very Good</option>
+          <option value="5">5 - Excellent</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comments</label>
+        <textarea id="comments" class="form-control" rows="4" placeholder="Share your experience..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">Submit Feedback</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-light">
+    <small>&copy; 2025 Rate & Win. All rights reserved.</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

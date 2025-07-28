@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'components';
+
+body {
+  font-family: $font-stack;
+}
+.dark-mode {
+  background-color: $dark-bg;
+  color: #fff;
+}

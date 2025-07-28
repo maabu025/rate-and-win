@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review History - Rate & Win</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Rate & Win</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="restaurants.html">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link active" href="review-history.html">Review History</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container my-5">
+    <h2 class="text-center mb-4">My Review History</h2>
+    <div id="reviewList" class="list-group">
+      <!-- Sample review item -->
+      <div class="list-group-item">
+        <h5 class="mb-1">Pizza Palace</h5>
+        <p class="mb-1">“Amazing taste and quick delivery. Will order again!”</p>
+        <small class="text-muted">Rated: ★★★★☆ — March 25, 2025</small>
+      </div>
+      <div class="list-group-item">
+        <h5 class="mb-1">Burger Town</h5>
+        <p class="mb-1">“Great service but the burger was a bit cold.”</p>
+        <small class="text-muted">Rated: ★★★☆☆ — March 22, 2025</small>
+      </div>
+      <!-- More reviews can be dynamically loaded here -->
+    </div>
+  </section>
+
+  <footer class="bg-light py-3 text-center">
+    <small>© 2025 Rate & Win. All rights reserved.</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

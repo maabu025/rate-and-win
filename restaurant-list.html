@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rate & Win - Restaurants</title>
+  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Rate & Win</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="restaurants.html">Restaurants</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="rewards.html">Rewards</a></li>
+          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="btn btn-primary" href="login.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="text-center p-4 bg-success text-white">
+    <h2>Browse Participating Restaurants</h2>
+    <p>Find restaurants where you can rate and win.</p>
+  </header>
+
+  <!-- Restaurant List -->
+  <main class="container my-5">
+    <div class="row" id="restaurant-list">
+      <!-- Restaurant Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/images/restaurant1.jpg" class="card-img-top" alt="Restaurant 1">
+          <div class="card-body">
+            <h5 class="card-title">Golden Grill</h5>
+            <p class="card-text">Accra, Ghana</p>
+            <a href="restaurant-details.html?id=1" class="btn btn-success">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/images/restaurant2.jpg" class="card-img-top" alt="Restaurant 2">
+          <div class="card-body">
+            <h5 class="card-title">Urban Taste</h5>
+            <p class="card-text">Kumasi, Ghana</p>
+            <a href="restaurant-details.html?id=2" class="btn btn-success">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Restaurant Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <img src="assets/images/restaurant3.jpg" class="card-img-top" alt="Restaurant 3">
+          <div class="card-body">
+            <h5 class="card-title">Mama's Kitchen</h5>
+            <p class="card-text">Tamale, Ghana</p>
+            <a href="restaurant-details.html?id=3" class="btn btn-success">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-light">
+    <small>&copy; 2025 Rate & Win. All rights reserved.</small>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

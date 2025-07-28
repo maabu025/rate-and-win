@@ -1,0 +1,24 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "userName": "Kingsley Adjei",
+      "userAvatar": "https://i.pravatar.cc/60?img=1",
+      "restaurantName": "Fiesta‑Royale",
+      "rating": 5,
+      "comment": "Great food, quick service",
+      "timeAgo": "2 hrs ago"
+    },
+    {
+      "id": 2,
+      "userName": "Father Dominic",
+      "userAvatar": "https://i.pravatar.cc/60?img=2",
+      "restaurantName": "Tree House",
+      "rating": 3,
+      "comment": "Average experience but clean",
+      "timeAgo": "5 hrs ago"
+    }
+  ],
+  "users": [],
+  "rewards": []
+}
