@@ -397,4 +397,8 @@ InventoryPro is an inventory management platform designed for African retail bus
   }
 }
 
+## AI Usage Statement
+I used AI (ChatGPT) to explain into details the project reguirement since I could not find the rubrics. So ChatGPT explained the project requirement for me.
+Prompt Used: Could you explain into details what I need to do in this assignment to possibly get a perfect score?
+
 
